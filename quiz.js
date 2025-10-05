@@ -5,12 +5,11 @@ function checkAnswer() {
     let feedback = document.getElementById("feedback");
 
 
-    if (!userAnswer) {
-        feedback.innerHTML = "Please select an answer!"
-    }else if (userAnswer.value  !== correctAnswer) {
-        feedback.innerHTML = "That's incorrect. Try again!"
-    } else {
+   
+    if (userAnswer.value  === correctAnswer) {
         feedback.innerHTML = "Correct! Well done.";
+    } else {
+        feedback.innerHTML = "That's incorrect. Try again!";
     }
 
 }
