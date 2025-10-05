@@ -6,7 +6,7 @@ function checkAnswer() {
 
 
    
-    if (userAnswer  === correctAnswer) {
+    if (userAnswer === correctAnswer) {
         feedback.innerHTML = "Correct! Well done.";
     } else {
         feedback.innerHTML = "That's incorrect. Try again!";
